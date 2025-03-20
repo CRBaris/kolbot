@@ -508,10 +508,10 @@ function LoadConfig () {
   Config.ScanShrines = [];
 
   // DClone config
-  Config.StopOnDClone = true; // Go to town and idle as soon as Diablo walks the Earth
+  Config.StopOnDClone = false; // Go to town and idle as soon as Diablo walks the Earth
   Config.SoJWaitTime = 5; // Time in minutes to wait for another SoJ sale before leaving game. 0 = disabled
   Config.KillDclone = false; // Go to Palace Cellar 3 and try to kill Diablo Clone. Pointless if you already have Annihilus.
-  Config.DCloneQuit = false; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
+  Config.DCloneQuit = true; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
 
   // Monster skip config
   // Skip immune monsters. Possible options: "fire", "cold", "lightning", "poison", "physical", "magic".
