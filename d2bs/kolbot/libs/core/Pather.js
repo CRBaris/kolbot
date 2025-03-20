@@ -59,6 +59,14 @@ const NodeAction = {
       }
     }
 
+    if (Config.Summoner.KillSpecters && me.area === 74) {
+      monList = Attack.getMob(40, 0, 30);
+    
+      if (monList) {
+        Attack.clearList(monList);
+      }
+    }
+
     if ((typeof Config.ClearPath === "number" || typeof Config.ClearPath === "object")
       && killSettings.clearPath === false && !killSettings.overrideConfig) {
       switch (typeof Config.ClearPath) {
