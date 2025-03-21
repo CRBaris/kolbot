@@ -32,7 +32,8 @@ const Summoner = new Runnable(
       throw new Error("Failed to move to Summoner");
     }
 
-    Attack.clear(15, 0, sdk.monsters.TheSummoner);
+    Attack.clearLevel(0);
+    //Attack.clear(15, 0, sdk.monsters.TheSummoner);
 
     // always take portal, faster access to wp
     // first check if portal is already up
